@@ -1,0 +1,131 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+h2 { color: #333; margin-top: 0; }
+h3 { font-size: 1rem; color: #666; font-weight: normal; margin-bottom: 10px;}
+
+.sensor-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.reading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.unit { font-size: 1.2rem; color: #95a5a6; margin-left: 2px;}
+
+.status-box {
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.on { background-color: #3498db; box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3); }
+.off { background-color: #34495e; }
+.success { background-color: #27ae60; }
+.error { background-color: #e74c3c; }
+
+.control-panel {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 80px;
+    text-align: center;
+    border: 2px solid #ecf0f1;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="number"]:focus { border-color: #3498db; }
+
+button, .btn-back {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+    box-sizing: border-box;
+}
+
+button:hover, .btn-back:hover { background-color: #2980b9; }
+button:disabled { background-color: #95a5a6; cursor: not-allowed; }
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 20px 0;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-right: 5px;
+}
+
+/* Botão padrão (Timer) */
+.btn-timer {
+    background-color: #f39c12; /* Laranja */
+    margin-top: 10px;
+}
+.btn-timer:hover { background-color: #d35400; }
+
+/* Botão de Perigo (Parar) */
+.btn-danger {
+    background-color: #e74c3c; /* Vermelho */
+    margin-top: 10px;
+}
+.btn-danger:hover { background-color: #c0392b; }
+
+.timer-display {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
